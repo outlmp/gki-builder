@@ -140,8 +140,8 @@ elif [[ $USE_KSU_NEXT == "yes" ]] && [[ $USE_KSU == "yes" ]]; then
     exit 1
 fi
 
-git config --global user.email "kontol@example.com"
-git config --global user.name "Your Name"
+git config --global user.email "mjc1618@163.com"
+git config --global user.name "outlmp"
 
 # SUSFS4KSU setup
 if [[ $USE_KSU == "yes" ]] || [[ $USE_KSU_NEXT == "yes" ]] && [[ $USE_KSU_SUSFS == "yes" ]]; then
