@@ -13,7 +13,7 @@ export ANYKERNEL_BRANCH="gki"
 
 # Kernel
 export KERNEL_REPO="https://github.com/ztc1997/android_gki_kernel_5.10_common"
-export KERNEL_BRANCH="android12-5.10-2024-11"
+export KERNEL_BRANCH="android12-5.10-2024-05"
 export DEFCONFIG="gki_defconfig"
 export KERNEL_IMAGE="$WORKDIR/out/arch/arm64/boot/Image"
 
