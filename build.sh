@@ -235,10 +235,8 @@ send_msg "$text"
 # Build GKI
 cd $WORKDIR/common
 set +e
-(
-    make ARCH=arm64 LLVM=1 LLVM_IAS=1 O=$WORKDIR/out CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_COMPAT=arm-linux-gnueabi- $DEFCONFIG
-    make ARCH=arm64 LLVM=1 LLVM_IAS=1 O=$WORKDIR/out CROSS_COMPILE=aarch64-linux-gnu- CROSS_COMPILE_COMPAT=arm-linux-gnueabi- -j$(nproc --all)
-) 2>&1 | tee $WORKDIR/build.log
+（ LTO=thin BUILD_CONFIG=msm-kernel/build.config.gki.aarch64 build/build.sh > logs.txt
+    ) 2>&1 | tee $WORKDIR/build.log
 set -e
 cd $WORKDIR
 
