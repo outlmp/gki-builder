@@ -64,4 +64,4 @@ jobs:
             export USE_KSU_NEXT="yes"
        fi
 
-       ./build.sh
+       LTO=thin BUILD_CONFIG=msm-kernel/build.config.gki.aarch64 build/build.sh > logs.txt
