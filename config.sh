@@ -17,8 +17,8 @@ ANYKERNEL_REPO="https://github.com/hazepynut/anykernel"
 ANYKERNEL_BRANCH="gki"
 
 # Kernel
-KERNEL_REPO="https://github.com/hazepynut/kernel_new"
-KERNEL_BRANCH="android12-5.10"
+KERNEL_REPO="https://github.com/ztc1997/android_gki_kernel_5.10_common"
+KERNEL_BRANCH="android12-5.10-2025-02"
 KERNEL_DEFCONFIG="gki_defconfig"
 DEFCONFIG_FILE="$workdir/common/arch/arm64/configs/$KERNEL_DEFCONFIG"
 
